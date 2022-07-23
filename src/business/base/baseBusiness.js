@@ -1,11 +1,11 @@
 import { NotImplementedException } from '../../utils/exceptions.js'
 
 export class BaseBusiness {
-  _validateRequiredFields(data) {
+  _validateRequiredFields() {
     throw new NotImplementedException(this._validateRequiredFields.name)
   }
 
-  _create(data) {
+  _create() {
     throw new NotImplementedException(this._create.name)
   }
 
@@ -14,6 +14,6 @@ export class BaseBusiness {
 
     if (!isValid) throw new Error('Invalid data')
 
-    this._create(data)
+    return this._create(data)
   }
 }
