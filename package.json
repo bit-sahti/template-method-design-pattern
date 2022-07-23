@@ -1,0 +1,22 @@
+{
+  "name": "template-method",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "nodemon src",
+    "start": "node src",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --watch  --config ./jest.config.js",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --config ./jest.config.js --coverage --silent"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
