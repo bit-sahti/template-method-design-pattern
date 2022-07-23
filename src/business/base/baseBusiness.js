@@ -10,10 +10,10 @@ export class BaseBusiness {
   }
 
   create(data) {
-    const isValid = this._validateeRequiredFields(data)
+    const isValid = this._validateRequiredFields(data)
 
     if (!isValid) throw new Error('Invalid data')
 
-    this.create(data)
+    this._create(data)
   }
 }
