@@ -1,5 +1,5 @@
 import { jest } from '@jest/globals'
-import { OrderBusiness } from '../src/business/base/orderBusiness.js'
+import { OrderBusiness } from '../src/business/orderBusiness.js'
 import { Order } from '../src/entities/order.js'
 
 describe('#Order Business test suite', () => {
